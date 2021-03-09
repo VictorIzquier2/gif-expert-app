@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGridItem /> Debe de mostrar el componente correctamente 1`] = `
+<Fragment>
+  <div
+    className="card"
+  >
+    <img
+      alt="Goku comiendo"
+      height={240}
+      src="https://media3.giphy.com/media/DzeKll1HYxiYo/giphy.gif?cid=f18a8f9bn8frrg5r778mjk79cowvlr8ixxmqp121maxk18bz&rid=giphy.gif"
+    />
+    <p>
+      Goku comiendo
+    </p>
+  </div>
+</Fragment>
+`;

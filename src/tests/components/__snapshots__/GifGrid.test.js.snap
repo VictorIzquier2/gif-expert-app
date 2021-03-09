@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <GifGrid /> Debe de mostrarse correctamente 1`] = `
+<Fragment>
+  <h3>
+    One Punch
+  </h3>
+  Cargando...
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en el <GifGrid /> debe de mostrar items cuando se cargan imágenes useFetchGifs 1`] = `
+<Fragment>
+  <h3>
+    One Punch
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="Dragon Ball"
+      key="Dragon Ball"
+      title="Dragon Ball"
+      url="https://media3.giphy.com/media/DzeKll1HYxiYo/giphy.gif?cid=f18a8f9bn8frrg5r778mjk79cowvlr8ixxmqp121maxk18bz&rid=giphy.gif"
+    />
+    <GifGridItem
+      id="Dragon Ball"
+      key="Dragon Ball"
+      title="Dragon Ball"
+      url="https://media3.giphy.com/media/DzeKll1HYxiYo/giphy.gif?cid=f18a8f9bn8frrg5r778mjk79cowvlr8ixxmqp121maxk18bz&rid=giphy.gif"
+    />
+  </div>
+</Fragment>
+`;

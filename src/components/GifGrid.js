@@ -1,8 +1,9 @@
 import { Fragment } from "react";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 import GifGridItem from './GifGridItem';
+import PropTypes from 'prop-types';
 
-const GifGrid = ({category}) => {
+export const GifGrid = ({category}) => {
 
   const {data: images, loading}= useFetchGifs(category)
 
@@ -11,12 +12,10 @@ const GifGrid = ({category}) => {
       <h3>{category}</h3>
       {loading && 'Cargando...'}
       <div className='card-grid'>
-        {images.map(({id, url, title}) => (
+        {images.map(img => (
           <GifGridItem
-            key={id}
-            id={id}
-            url={url}
-            title={title}
+            key={img.id}
+            {...img}
           />
         ))}
       </div>
@@ -24,5 +23,8 @@ const GifGrid = ({category}) => {
     </Fragment>
    );
 }
- 
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired
+}
+
 export default GifGrid;
